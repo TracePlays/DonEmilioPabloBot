@@ -29,7 +29,7 @@ bot.on('message', function(message) {
             }else{
                message.channel.sendMessage('?'); 
             }
-            Else
+           break;
         default: 
             message.channel.sendMessage('Ungültiges Kommando');
     }
