@@ -28,6 +28,7 @@ bot.on('message', function(message) {
         case 'ping': 
             message.channel.sendMessage('Pong!');
             break;
+    }
 });
 // THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
