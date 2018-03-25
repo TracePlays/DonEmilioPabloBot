@@ -1,16 +1,18 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+//const client = new Discord.Client();
 const prefix = '!';
 
-client.on('ready', () => {
-    console.log('I am ready!');
+var bot = new Discord.Client();
+
+bot.on('ready', function() {
+    console.log('ready!');
 });
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
-  	}
-});
+//client.on('message', message => {
+  //  if (message.content === 'ping') {
+    //	message.channel.send('PONG!');
+  	//}
+//});
 
 //client.on('message', message => {
   //  if (message.content === 'bing') {
@@ -28,4 +30,4 @@ client.on('message', function(message) {
             break;
 });
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
