@@ -37,7 +37,7 @@ bot.on('message', function(message) {
              message.channel.sendEmbed(embed); 
             break;
         case 'noticeme': 
-             message.channel.sendMessage('Hello' + message.author.toString());
+             message.channel.sendMessage('Hello ' + message.author.toString());
         break;
         default: 
             message.channel.sendMessage('Ungültiger Befehl!');
