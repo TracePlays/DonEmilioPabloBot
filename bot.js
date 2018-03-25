@@ -25,7 +25,7 @@ bot.on('message', function(message) {
            break;
         case 'random': 
             if(args[1]){
-                message.channel.sendMessage(randomAuswahl[Math.floor(Math.random()*randomAuswahl)]); 
+                message.channel.sendMessage(randomAuswahl[Math.floor(Math.random()*randomAuswahl.length)]); 
             }else{
                message.channel.sendMessage('?'); 
             }
