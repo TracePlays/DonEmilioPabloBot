@@ -19,7 +19,7 @@ bot.on('ready', function() {
    // 	message.reply('BONG!');
   	//}
 //});
-client.on('message', function(message) {
+bot.on('message', function(message) {
     if(!message.content.startsWith(prefix)) return;
     
     var args = message.content.substring(prefix.length).split(" ");
