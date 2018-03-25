@@ -30,6 +30,10 @@ bot.on('message', function(message) {
                message.channel.sendMessage('?'); 
             }
            break;
+        case 'embed': 
+            var embed = new Discord.RichEmbed().setDescription('Petra');
+             message.channel.sendMessage(embed); 
+            break;
         default: 
             message.channel.sendMessage('Ungültiger Befehl!');
     }
