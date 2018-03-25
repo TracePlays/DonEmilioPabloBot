@@ -36,6 +36,9 @@ bot.on('message', function(message) {
             .setColor(0x00FFFF)
              message.channel.sendEmbed(embed); 
             break;
+        case 'noticeme': 
+             message.channel.sendMessage('Hello' + message.author.toString());
+        break;
         default: 
             message.channel.sendMessage('Ungültiger Befehl!');
     }
