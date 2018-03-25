@@ -12,7 +12,7 @@ bot.on('message', function(message) {
     //nach prefix content splitten
     var args = message.content.substring(prefix.length).split(" ");
     //eingabe klein machen
-    switch(args[0].toLowerCase){
+    switch(args[0].toLowerCase(){
         case 'don': 
             message.channel.sendMessage('Wau!');
             break;
