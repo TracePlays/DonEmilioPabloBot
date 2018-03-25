@@ -11,11 +11,14 @@ bot.on('message', function(message) {
     if(!message.content.startsWith(prefix)) return;
     //nach prefix content splitten
     var args = message.content.substring(prefix.length).split(" ");
-    
-    switch(args[0]){
+    //eingabe klein machen
+    switch(args[0].toLowerCase){
         case 'don': 
             message.channel.sendMessage('Wau!');
             break;
+        case 'info': 
+            message.channel.sendMessage('Don Emilio Pablot Bot created by Trace!');
+           break;
     }
 });
 // nicht verändern!
