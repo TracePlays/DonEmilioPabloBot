@@ -31,7 +31,7 @@ bot.on('message', function(message) {
             }
            break;
         default: 
-            message.channel.sendMessage('Ungültiges Kommando');
+            message.channel.sendMessage('Ungültiger Befehl!');
     }
 });
 // nicht verändern!
