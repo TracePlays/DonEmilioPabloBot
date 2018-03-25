@@ -27,10 +27,7 @@ client.on('message', function (user, userID, channelID, message, evt) {
         switch(cmd) {
             // !ping
             case 'don':
-                client.sendMessage({
-                    to: channelID,
-                    message: 'Wau!'
-                });
+               message.channel.send('Wau!');
             break;
             // Just add any case commands if you want to..
          }
