@@ -32,7 +32,7 @@ bot.on('message', function(message) {
            break;
         case 'embed': 
             var embed = new Discord.RichEmbed().setDescription('Petra');
-             message.channel.sendMessage(embed); 
+             message.channel.sendEmbed(embed); 
             break;
         default: 
             message.channel.sendMessage('Ungültiger Befehl!');
