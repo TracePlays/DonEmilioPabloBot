@@ -20,6 +20,9 @@ bot.on('message', function(message) {
         case 'don': 
             message.channel.sendMessage('Wau!');
             break;
+        case 'ams':
+             message.channel.sendMessage('http://www.ams.at/');
+            break;
         case 'info': 
             message.channel.sendMessage('Don Emilio Pablot Bot created by Trace!');
            break;
