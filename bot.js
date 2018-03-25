@@ -33,7 +33,7 @@ bot.on('message', function(message) {
         case 'embed': 
             var embed = new Discord.RichEmbed()
             .setDescription('Petra')
-            .setColor('pink')
+            .setColor(0x00FFFF)
              message.channel.sendEmbed(embed); 
             break;
         default: 
