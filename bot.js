@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = '!';
 
-var bot = new Discord.Client();
+//var bot = new Discord.Client();
 
 bot.on('ready', function() {
     console.log('ready!');
@@ -30,5 +30,5 @@ bot.on('message', function(message) {
             break;
     }
 });
-// THIS  MUST  BE  THIS  WAY
+// nicht verändern!
 bot.login(process.env.BOT_TOKEN);
