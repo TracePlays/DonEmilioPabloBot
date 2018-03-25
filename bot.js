@@ -42,6 +42,9 @@ bot.on('message', function(message) {
         case 'noticeme': 
              message.channel.sendMessage('Hello ' + message.author.toString());
         break;
+        case 'parsum': 
+            message.channel.sendMessage('http://parsum-trading.com/');
+            break;
         default: 
             message.channel.sendMessage('Ungültiger Befehl!');
     }
