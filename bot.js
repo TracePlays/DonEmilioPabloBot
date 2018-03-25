@@ -31,7 +31,9 @@ bot.on('message', function(message) {
             }
            break;
         case 'embed': 
-            var embed = new Discord.RichEmbed().setDescription('Petra');
+            var embed = new Discord.RichEmbed()
+            .setDescription('Petra')
+            .setColor('pink')
              message.channel.sendEmbed(embed); 
             break;
         default: 
