@@ -45,6 +45,9 @@ bot.on('message', function(message) {
         case 'noticeme': 
              message.channel.sendMessage('Hello ' + message.author.toString());
         break;
+        case 'gladius':
+            message.channel.sendMessage('http://www.buyingasword.com/images/Product/large/500360.png');
+            break;
         case 'parsum': 
             message.channel.sendMessage('http://parsum-trading.com/');
             break;
