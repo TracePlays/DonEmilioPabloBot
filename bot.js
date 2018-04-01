@@ -27,6 +27,9 @@ bot.on('message', function(message) {
             message.channel.sendMessage('Don Emilio Pablot Bot created by Trace!');
            break;
         case 'random': 
+            message.channel.sendMessage('Neuer Befehl "!emilio"');
+            break;
+        case 'emilio': 
             if(args[1]){
                 message.channel.sendMessage(randomAuswahl[Math.floor(Math.random()*randomAuswahl.length)]); 
             }else{
